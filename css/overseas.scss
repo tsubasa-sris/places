@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html{
+  font-size: 62.5%;
+  background-color: white;
+  background-image: url(../images/bg.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment:fixed;
+}
+
+header{
+  h1{
+    padding: 60px 0 60px 0;
+    text-align: center;
+    margin: auto;
+    img{
+      width: 28%;
+    }
+  }
+  .description{
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    p{
+      color: black;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.2rem;
+      letter-spacing: 1.3px;
+    }
+  }
+}
+main{
+  .countries{
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    ul{
+      li{
+        height: 158px;
+        margin-bottom: 60px;
+        text-align: center;
+        line-height: 158px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3.6rem;
+        color: white;
+        letter-spacing: 3px;
+        text-shadow: 0 0 40px black;
+      }
+      li.england{
+        background-image: url(../images/england.jpg);
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+      }
+      li.sweden{
+        background-image: url(../images/sweden.jpg);
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+      }
+      li.singapore{
+        background-image: url(../images/singapore.jpg);
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+      }
+      li.turkey{
+        background-image: url(../images/turkey.jpg);
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+      }
+      li.australia{
+        background-image: url(../images/australia.jpg);
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+      }
+      li.france{
+        background-image: url(../images/france.jpg);
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+}

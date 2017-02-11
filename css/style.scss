@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100');
+
+html{
+  font-size: 62.5%;
+  background-color: white;
+}
+
+header{
+  background-image: url(../images/top_page_bg3.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  h1{
+    padding: 50px 0 30px 0;
+    text-align: center;
+    img{
+      width: 65%;
+    }
+  }
+  .description{
+    margin: 0 auto;
+    width: 60%;
+    p{
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.2rem;
+      letter-spacing: 1.3px;
+      line-height: 1.5;
+      text-shadow: 0 0 30px black;
+    }
+    .last_line{
+      overflow: hidden;
+      p.signature{
+        float: left;
+        font-family: 'Shadows Into Light', cursive;
+        margin-top: 10px;
+        display: inline;
+      }
+      a{
+        float: right;
+        text-align: right;
+        width:23%;
+        margin-top: 15px;
+        padding-bottom: 5px;
+        position: relative;
+      	display: inline-block;
+      	transition: .3s;
+      }
+      a::after {
+      	position: absolute;
+      	bottom: 0;
+      	left: 50%;
+      	content: '';
+      	width: 0;
+      	height: 1px;
+      	background-color: white;
+      	transition: .3s;
+      	-webkit-transform: translateX(-50%);
+      	transform: translateX(-50%);
+      }
+      a:hover::after {
+      	width: 100%;
+      }
+    }
+  }
+}
