@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Places I Want to Go</title>
@@ -9,20 +9,48 @@
         <script src="https://use.fontawesome.com/62440912c4.js"></script>
     </head>
     <body>
-        <header>
-            <h1><img src="./images/title.svg" alt=""></h1>
-            <div class="description">
-                <p>In this site, I am going to introduce some places that I want to go someday in three categories.<br>I am interested in travering all over the world, and I want to experinence a lot of things in the future through travering.<br>I hope you enjoy my site.
-                </p>
-                <div class="last_line">
-                    <p class="signature">Tsubasa Shiraishi</p>
-                    <a href="overseas.html"><img src="./images/show_menu.svg" alt=""></a>
+        <div id="content">
+            <header>
+                <h1><img src="./images/title.svg" alt=""></h1>
+            </header>
+            <main>
+                <div class="description">
+                    <p>In this site, I am going to introduce some places that I want to go someday in three categories.<br>I am interested in travering all over the world, and I want to experinence a lot of things in the future through travering.<br>I hope you enjoy my site.
+                    </p>
+                    <div class="last_line">
+                        <p class="signature">Tsubasa Shiraishi</p>
+                        <a href="#" class="menu_open_btn"><img src="./images/show_menu.svg" alt=""></a>
+                    </div>
                 </div>
-            </div>
+            </main>
+            <footer>
+                <small><i class="fa fa-copyright" aria-hidden="true"></i> 2017 Produced by Tsubasa Shiraishi</small>
+            </footer>
+        </div>
 
-        </header>
-        <footer>
-            <small><i class="fa fa-copyright" aria-hidden="true"></i> 2017 Produced by Tsubasa Shiraishi</small>
-        </footer>
+        <div id="modal_menu">
+            <a href="#" class="menu_close_btn"><img src="./images/close_btn.svg" alt="close"></a>
+            <ul class="menu_nav">
+                <li><a href="index.html"><img class="top" src="./images/top.svg" alt="top"></a></li>
+                <li><a href="overseas.html"><img class="overseas" src="./images/overseas.svg" alt="overseas"></a></li>
+                <li><a href="japan.html"><img src="./images/japan.svg" alt="japan"></a></li>
+                <li><a href="again.html"><img src="./images/again.svg" alt=""></a></li>
+                <li class="social"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li class="social"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script>
+            var $body = $('body');
+            $('.menu_open_btn').click(function(){
+              $body.addClass('is-menu-open');
+              return false;
+            });
+
+            $('.menu_close_btn').click(function(){
+              $body.removeClass('is-menu-open');
+              return false;
+            });
+        </script>
     </body>
 </html>

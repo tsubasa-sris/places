@@ -5,12 +5,18 @@
 html{
   font-size: 62.5%;
   background-color: white;
+}
+body{
   background-image: url(../images/sky_bg-min.jpg);
   height: 100vh;
   width: 100%;
   background-size: cover;
   background-position: center;
   background-attachment:fixed;
+}
+#content{
+  overflow: scroll;
+  height: 100vh;
 }
 nav{
   color: white;
@@ -118,4 +124,101 @@ footer{
     display: block;
     font-size: 1.4rem;
   }
+}
+#modal_menu {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  background-color: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  transition: opacity .2s ease-out;
+  pointer-events: none;
+  .menu_nav{
+    margin-top: 100px;
+    text-align: center;
+    position: relative;
+    transform: translateY(50px);
+    transition: all .2s ease;
+    margin: auto;
+    li{
+      margin-top: 10px;
+      a{
+        opacity: 0.6;
+        text-decoration: none;
+        font-size: 4rem;
+        margin: 20px 0;
+        display: inline-block;
+        img.top{
+          width: 10rem;
+        }
+        img.overseas{
+          width: 22rem;
+        }
+        img{
+          width: 15rem;
+        }
+      }
+      a:hover{
+        opacity: 1;
+      }
+    }
+    li.social{
+      margin-right: 50px;
+      text-align: center;
+      display:inline-block;
+      a{
+        color: black;
+        font-size: 5rem;
+      }
+    }
+    li:last-child{
+      margin-right: 0px;
+    }
+  }
+  .menu_close_btn{
+    position: absolute;
+    top: 36px;
+    right: 36px;
+    img{
+      width: 50px;
+      display: block;
+    }
+  }
+}
+body.is-menu-open #modal_menu {
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 1s ease;
+}
+
+body.is-menu-open #content {
+  pointer-events: none;
+  transition: all 1s ease;
+  -webkit-filter: blur(6px);
+     -moz-filter: blur(6px);
+      -ms-filter: blur(6px);
+          filter: blur(6px);
+}
+
+body.is-menu-open .menu_nav {
+  transform: translateY(0);
+}
+body.is-menu-open:before{
+  transition: 59s;
+  content: '';
+  background: inherit;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  transition: 59s;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
 }
