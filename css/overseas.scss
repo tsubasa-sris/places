@@ -7,12 +7,19 @@ html{
   background-color: white;
 }
 body{
-  background-image: url(../images/sky_bg-min.jpg);
+  // background-image: url(../images/sky_bg-min.jpg);
   height: 100vh;
   width: 100%;
   background-size: cover;
   background-position: center;
   background-attachment:fixed;
+}
+video{
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+  background: url(polina.jpg) no-repeat;
+  background-size: cover;
 }
 #content{
   overflow: scroll;
@@ -59,7 +66,68 @@ main{
     margin: auto;
     margin-top: 50px;
     ul{
+      .england_content{
+        background-color: white;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        margin-top: -45px;
+        margin-bottom: 45px;
+        padding: 26px;
+        display: none;
+        height: 14rem;
+      }
+      .sweden_content{
+        background-color: white;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        margin-top: -45px;
+        margin-bottom: 45px;
+        padding: 26px;
+        display: none;
+        height: 140px;
+      }
+      .singapore_content{
+        background-color: white;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        margin-top: -45px;
+        margin-bottom: 45px;
+        padding: 26px;
+        display: none;
+        height: 140px;
+      }
+      .turkey_content{
+        background-color: white;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        margin-top: -45px;
+        margin-bottom: 45px;
+        padding: 26px;
+        display: none;
+        height: 140px;
+      }
+      .australia_content{
+        background-color: white;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        margin-top: -45px;
+        margin-bottom: 45px;
+        padding: 26px;
+        display: none;
+        height: 140px;
+      }
+      .france_content{
+        background-color: white;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        margin-top: -45px;
+        margin-bottom: 45px;
+        padding: 26px;
+        display: none;
+        height: 140px;
+      }
       li{
+        transition: all .2s;
         cursor: pointer;
         height: 158px;
         margin-bottom: 45px;
@@ -70,7 +138,7 @@ main{
         color: white;
         letter-spacing: 3px;
         text-shadow: 0 0 40px black;
-        filter: saturate(20%);
+        filter: saturate(10%);
         opacity: 0.8;
       }
       li.england{
@@ -79,11 +147,19 @@ main{
         background-size: cover;
         background-position: center;
       }
+      li.england.show{
+        filter: saturate(100%);
+        opacity:1;
+      }
       li.sweden{
         background-image: url(../images/sweden.jpg);
         width: 100%;
         background-size: cover;
         background-position: center;
+      }
+      li.sweden.show{
+        filter: saturate(100%);
+        opacity:1;
       }
       li.singapore{
         background-image: url(../images/singapore.jpg);
@@ -91,11 +167,19 @@ main{
         background-size: cover;
         background-position: center;
       }
+      li.singapore.show{
+        filter: saturate(100%);
+        opacity:1;
+      }
       li.turkey{
         background-image: url(../images/turkey.jpg);
         width: 100%;
         background-size: cover;
         background-position: center;
+      }
+      li.turkey.show{
+        filter: saturate(100%);
+        opacity:1;
       }
       li.australia{
         background-image: url(../images/australia.jpg);
@@ -103,11 +187,19 @@ main{
         background-size: cover;
         background-position: center;
       }
+      li.australia.show{
+        filter: saturate(100%);
+        opacity:1;
+      }
       li.france{
         background-image: url(../images/france.jpg);
         width: 100%;
         background-size: cover;
         background-position: center;
+      }
+      li.france.show{
+        filter: saturate(100%);
+        opacity:1;
       }
       li:hover{
         filter: saturate(100%);

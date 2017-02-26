@@ -3,7 +3,9 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 html { font-size: 62.5%; background-color: white; }
 
-body { background-image: url(../images/sky_bg-min.jpg); height: 100vh; width: 100%; background-size: cover; background-position: center; background-attachment: fixed; }
+body { height: 100vh; width: 100%; background-size: cover; background-position: center; background-attachment: fixed; }
+
+video { position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: -100; background: url(polina.jpg) no-repeat; background-size: cover; }
 
 #content { overflow: scroll; height: 100vh; }
 
@@ -21,19 +23,43 @@ header .description p { color: black; font-family: 'Montserrat', sans-serif; fon
 
 main .countries { width: 70%; margin: auto; margin-top: 50px; }
 
-main .countries ul li { cursor: pointer; height: 158px; margin-bottom: 45px; text-align: center; line-height: 158px; font-family: 'Montserrat', sans-serif; font-size: 3.6rem; color: white; letter-spacing: 3px; text-shadow: 0 0 40px black; filter: saturate(20%); opacity: 0.8; }
+main .countries ul .england_content { background-color: white; font-size: 1.8rem; letter-spacing: 1px; margin-top: -45px; margin-bottom: 45px; padding: 26px; display: none; height: 14rem; }
+
+main .countries ul .sweden_content { background-color: white; font-size: 1.8rem; letter-spacing: 1px; margin-top: -45px; margin-bottom: 45px; padding: 26px; display: none; height: 140px; }
+
+main .countries ul .singapore_content { background-color: white; font-size: 1.8rem; letter-spacing: 1px; margin-top: -45px; margin-bottom: 45px; padding: 26px; display: none; height: 140px; }
+
+main .countries ul .turkey_content { background-color: white; font-size: 1.8rem; letter-spacing: 1px; margin-top: -45px; margin-bottom: 45px; padding: 26px; display: none; height: 140px; }
+
+main .countries ul .australia_content { background-color: white; font-size: 1.8rem; letter-spacing: 1px; margin-top: -45px; margin-bottom: 45px; padding: 26px; display: none; height: 140px; }
+
+main .countries ul .france_content { background-color: white; font-size: 1.8rem; letter-spacing: 1px; margin-top: -45px; margin-bottom: 45px; padding: 26px; display: none; height: 140px; }
+
+main .countries ul li { transition: all .2s; cursor: pointer; height: 158px; margin-bottom: 45px; text-align: center; line-height: 158px; font-family: 'Montserrat', sans-serif; font-size: 3.6rem; color: white; letter-spacing: 3px; text-shadow: 0 0 40px black; filter: saturate(10%); opacity: 0.8; }
 
 main .countries ul li.england { background-image: url(../images/england.jpg); width: 100%; background-size: cover; background-position: center; }
 
+main .countries ul li.england.show { filter: saturate(100%); opacity: 1; }
+
 main .countries ul li.sweden { background-image: url(../images/sweden.jpg); width: 100%; background-size: cover; background-position: center; }
+
+main .countries ul li.sweden.show { filter: saturate(100%); opacity: 1; }
 
 main .countries ul li.singapore { background-image: url(../images/singapore.jpg); width: 100%; background-size: cover; background-position: center; }
 
+main .countries ul li.singapore.show { filter: saturate(100%); opacity: 1; }
+
 main .countries ul li.turkey { background-image: url(../images/turkey.jpg); width: 100%; background-size: cover; background-position: center; }
+
+main .countries ul li.turkey.show { filter: saturate(100%); opacity: 1; }
 
 main .countries ul li.australia { background-image: url(../images/australia.jpg); width: 100%; background-size: cover; background-position: center; }
 
+main .countries ul li.australia.show { filter: saturate(100%); opacity: 1; }
+
 main .countries ul li.france { background-image: url(../images/france.jpg); width: 100%; background-size: cover; background-position: center; }
+
+main .countries ul li.france.show { filter: saturate(100%); opacity: 1; }
 
 main .countries ul li:hover { filter: saturate(100%); opacity: 1; }
 

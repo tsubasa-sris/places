@@ -2,20 +2,38 @@ header h1 img { width: 22%; }
 
 header .description { width: 64%; }
 
-main .countries { width: 70%; margin: auto; margin-top: 50px; }
+main ul .kanazawa_content { background-color: white; font-size: 1.8rem; letter-spacing: 1px; margin-top: -45px; margin-bottom: 45px; padding: 26px; display: none; height: 140px; }
 
-main .countries ul li { cursor: pointer; height: 158px; margin-bottom: 45px; text-align: center; line-height: 158px; font-family: 'Montserrat', sans-serif; font-size: 3.6rem; color: white; letter-spacing: 3px; text-shadow: 0 0 40px black; filter: saturate(20%); opacity: 0.8; }
+main ul .kagawa_content { background-color: white; font-size: 1.8rem; letter-spacing: 1px; margin-top: -45px; margin-bottom: 45px; padding: 26px; display: none; height: 140px; }
 
-main .countries ul li.kanazawa { background-image: url(../images/kanazawa.jpg); width: 100%; background-size: cover; background-position: center; }
+main ul .nanatsugama_content { background-color: white; font-size: 1.8rem; letter-spacing: 1px; margin-top: -45px; margin-bottom: 45px; padding: 26px; display: none; height: 140px; }
 
-main .countries ul li.kagawa { background-image: url(../images/kagawa.jpg); width: 100%; background-size: cover; background-position: center; }
+main ul .fox_village_content { background-color: white; font-size: 1.8rem; letter-spacing: 1px; margin-top: -45px; margin-bottom: 45px; padding: 26px; display: none; height: 140px; }
 
-main .countries ul li.nanatsugama { background-image: url(../images/nanatsugama.jpg); width: 100%; background-size: cover; background-position: center; }
+main ul .itsukushima_content { background-color: white; font-size: 1.8rem; letter-spacing: 1px; margin-top: -45px; margin-bottom: 45px; padding: 26px; display: none; height: 140px; }
 
-main .countries ul li.fox_village { background-image: url(../images/fox_village.jpg); width: 100%; background-size: cover; background-position: center; }
+main ul .factory_content { background-color: white; font-size: 1.8rem; letter-spacing: 1px; margin-top: -45px; margin-bottom: 45px; padding: 26px; display: none; height: 140px; }
 
-main .countries ul li.itsukushima { background-image: url(../images/itsukushima.jpg); width: 100%; background-size: cover; background-position: center; }
+main ul li.kanazawa { background-image: url(../images/kanazawa.jpg); width: 100%; background-size: cover; background-position: center; }
 
-main .countries ul li.factory { background-image: url(../images/factory.jpg); width: 100%; background-size: cover; background-position: center; }
+main ul li.kanazawa.show { filter: saturate(100%); opacity: 1; }
 
-main .countries ul li:hover { filter: saturate(100%); opacity: 1; }
+main ul li.kagawa { background-image: url(../images/kagawa.jpg); width: 100%; background-size: cover; background-position: center; }
+
+main ul li.kagawa.show { filter: saturate(100%); opacity: 1; }
+
+main ul li.nanatsugama { background-image: url(../images/nanatsugama.jpg); width: 100%; background-size: cover; background-position: center; }
+
+main ul li.nanatsugama.show { filter: saturate(100%); opacity: 1; }
+
+main ul li.fox_village { background-image: url(../images/fox_village.jpg); width: 100%; background-size: cover; background-position: center; }
+
+main ul li.fox_village.show { filter: saturate(100%); opacity: 1; }
+
+main ul li.itsukushima { background-image: url(../images/itsukushima.jpg); width: 100%; background-size: cover; background-position: center; }
+
+main ul li.itsukushima.show { filter: saturate(100%); opacity: 1; }
+
+main ul li.factory { background-image: url(../images/factory.jpg); width: 100%; background-size: cover; background-position: center; }
+
+main ul li.factory.show { filter: saturate(100%); opacity: 1; }

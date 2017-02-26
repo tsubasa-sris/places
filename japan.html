@@ -10,6 +10,7 @@
         <script src="https://use.fontawesome.com/62440912c4.js"></script>
     </head>
     <body>
+        <video src="./images/sky4.mp4" autoplay loop></video>
         <div id="content">
             <nav>
                 <div class="menu_open_btn">
@@ -26,11 +27,29 @@
                 <div class="countries">
                     <ul>
                         <li class="kanazawa">kanazawa</li>
+                        <div class="kanazawa_content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
                         <li class="kagawa">kagawa</li>
+                        <div class="kagawa_content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
                         <li class="nanatsugama">nanatsugama</li>
+                        <div class="nanatsugama_content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
                         <li class="fox_village">fox village</li>
+                        <div class="fox_village_content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
                         <li class="itsukushima">itsukushima</li>
+                        <div class="itsukushima_content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
                         <li class="factory">factory night view</li>
+                        <div class="factory_content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
                     </ul>
                 </div>
             </main>
@@ -61,6 +80,32 @@
               $body.removeClass('is-menu-open');
               return false;
             });
+
+            $('.kanazawa').click(function(){
+               $(this).next().slideToggle("slow");
+               $(this).toggleClass('show');
+            });
+            $('.kagawa').click(function(){
+               $(this).next().slideToggle(500);
+               $(this).toggleClass('show');
+            });
+            $('.nanatsugama').click(function(){
+               $(this).next().slideToggle(500);
+               $(this).toggleClass('show');
+            });
+            $('.fox_village').click(function(){
+               $(this).next().slideToggle(500);
+               $(this).toggleClass('show');
+            });
+            $('.itsukushima').click(function(){
+               $(this).next().slideToggle(500);
+               $(this).toggleClass('show');
+            });
+            $('.factory').click(function(){
+               $(this).next().slideToggle(500);
+               $(this).toggleClass('show');
+            });
+
         </script>
     </body>
 </html>

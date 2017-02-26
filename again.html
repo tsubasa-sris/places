@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Places I Want to Go / Again</title>
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+        <link rel="stylesheet" type="text/css" href="./css/overseas.compact.css">
+        <link rel="stylesheet" type="text/css" href="./css/again.compact.css">
+        <script src="https://use.fontawesome.com/62440912c4.js"></script>
+    </head>
+    <body>
+        <video src="./images/sky4.mp4" autoplay loop></video>
+        <div id="content">
+            <nav>
+                <div class="menu_open_btn">
+                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                </div>
+            </nav>
+            <header>
+                <h1><img src="./images/again.svg" alt="again"></h1>
+                <div class="description">
+                    <p>In this page, I am going to introduce six places that I want to visit again.</p>
+                </div>
+            </header>
+            <main>
+                <div class="countries">
+                    <ul>
+                        <li class="vancouver">vancouver</li>
+                        <div class="vancouver_content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                        <li class="hawaii">hawaii</li>
+                        <div class="hawaii_content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                        <li class="losangels">losangels</li>
+                        <div class="losangels_content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                        <li class="kyoto">kyoto</li>
+                        <div class="kyoto_content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                        <li class="nikko">nikko</li>
+                        <div class="nikko_content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                        <li class="fukushima">fukushima</li>
+                        <div class="fukushima_content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                    </ul>
+                </div>
+            </main>
+            <footer>
+                <small><i class="fa fa-copyright" aria-hidden="true"></i> 2017 Produced by Tsubasa Shiraishi</small>
+            </footer>
+        </div>
+        <div id="modal_menu">
+            <a href="#" class="menu_close_btn"><img src="./images/close_btn.svg" alt="close"></a>
+            <ul class="menu_nav">
+                <li><a href="index.html"><img class="top" src="./images/top.svg" alt="top"></a></li>
+                <li><a href="overseas.html"><img class="overseas" src="./images/overseas.svg" alt="overseas"></a></li>
+                <li><a href="japan.html"><img src="./images/japan.svg" alt="japan"></a></li>
+                <li><a href="again.html"><img src="./images/again.svg" alt="again"></a></li>
+                <li class="social"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li class="social"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script>
+            var $body = $('body');
+            $('.menu_open_btn').click(function(){
+              $body.addClass('is-menu-open');
+              return false;
+            });
+
+            $('.menu_close_btn').click(function(){
+              $body.removeClass('is-menu-open');
+              return false;
+            });
+
+            $('.vancouver').click(function(){
+               $(this).next().slideToggle("slow");
+               $(this).toggleClass('show');
+            });
+            $('.hawaii').click(function(){
+               $(this).next().slideToggle(500);
+               $(this).toggleClass('show');
+            });
+            $('.losangels').click(function(){
+               $(this).next().slideToggle(500);
+               $(this).toggleClass('show');
+            });
+            $('.kyoto').click(function(){
+               $(this).next().slideToggle(500);
+               $(this).toggleClass('show');
+            });
+            $('.nikko').click(function(){
+               $(this).next().slideToggle(500);
+               $(this).toggleClass('show');
+            });
+            $('.fukushima').click(function(){
+               $(this).next().slideToggle(500);
+               $(this).toggleClass('show');
+            });
+        </script>
+    </body>
+</html>
