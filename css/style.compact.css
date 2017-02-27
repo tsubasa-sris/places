@@ -6,11 +6,21 @@ body { background-image: url(../images/top_page_bg3.jpg); height: 100vh; width: 
 
 header h1 { padding: 50px 0 30px 0; text-align: center; }
 
-header h1 img { width: 65%; }
+header h1 img.title_pc { width: 65%; }
+
+header h1 img.title_sp { display: none; }
+
+@media (max-width: 736px) { header h1 { padding: 23px 0 20px 0; }
+  header h1 img.title_pc { display: none; }
+  header h1 img.title_sp { display: block; width: 82%; margin: auto; } }
 
 main .description { margin: 0 auto; width: 60%; }
 
 main .description p { color: white; font-family: 'Montserrat', sans-serif; font-size: 2.2rem; letter-spacing: 1.3px; line-height: 1.5; text-shadow: 0 0 30px black; }
+
+main .description p span.name { display: none; }
+
+main .description span.menu_sp { display: none; }
 
 main .description .last_line { overflow: hidden; }
 
@@ -22,6 +32,13 @@ main .description .last_line a::after { position: absolute; bottom: 0; left: 50%
 
 main .description .last_line a:hover::after { width: 100%; }
 
+@media (max-width: 736px) { main .description { width: 90%; }
+  main .description p { text-align: justify; font-size: 2.2vh; letter-spacing: 0px; }
+  main .description p span.name { font-size: 2rem; display: block; font-family: 'Waiting for the Sunrise', cursive; text-align: right; margin-top: -2.6rem; }
+  main .description span.menu_sp { display: block; text-align: center; margin-top: 2vh; }
+  main .description span.menu_sp img { width: 50%; }
+  main .description .last_line { display: none; } }
+
 footer { position: absolute; bottom: 6px; width: 100%; text-align: center; }
 
 footer small { display: block; font-size: 1.4rem; }
@@ -29,6 +46,8 @@ footer small { display: block; font-size: 1.4rem; }
 #modal_menu { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90%; height: 90%; background-color: rgba(255, 255, 255, 0.7); opacity: 0; transition: opacity .2s ease-out; pointer-events: none; }
 
 #modal_menu .menu_nav { margin-top: 100px; text-align: center; position: relative; transform: translateY(50px); transition: all .2s ease; margin: auto; }
+
+@media (max-width: 736px) { #modal_menu .menu_nav li { margin-top: 1vh; } }
 
 #modal_menu .menu_nav li { margin-top: 10px; }
 
@@ -40,17 +59,28 @@ footer small { display: block; font-size: 1.4rem; }
 
 #modal_menu .menu_nav li a img { width: 15rem; }
 
+@media (max-width: 736px) { #modal_menu .menu_nav li a { opacity: 1; margin: 2vh 0; font-size: 6.2vh; }
+  #modal_menu .menu_nav li a img.top { width: 16vh; }
+  #modal_menu .menu_nav li a img.overseas { width: 36vh; }
+  #modal_menu .menu_nav li a img { width: 24vh; } }
+
 #modal_menu .menu_nav li a:hover { opacity: 1; }
 
 #modal_menu .menu_nav li.social { margin-right: 50px; text-align: center; display: inline-block; }
 
 #modal_menu .menu_nav li.social a { color: black; font-size: 5rem; }
 
+@media (max-width: 736px) { #modal_menu .menu_nav li.social { margin-right: 8vh; }
+  #modal_menu .menu_nav li.social a { font-size: 7vh; } }
+
 #modal_menu .menu_nav li:last-child { margin-right: 0px; }
 
 #modal_menu .menu_close_btn { position: absolute; top: 36px; right: 36px; }
 
 #modal_menu .menu_close_btn img { width: 50px; display: block; }
+
+@media (max-width: 736px) { #modal_menu .menu_close_btn { top: 2.4vh; right: 2.4vh; }
+  #modal_menu .menu_close_btn img { width: 30px; } }
 
 body.is-menu-open #modal_menu { opacity: 1; pointer-events: auto; transition: all 1s ease; }
 

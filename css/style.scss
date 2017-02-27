@@ -17,10 +17,27 @@ header{
   h1{
     padding: 50px 0 30px 0;
     text-align: center;
-    img{
+    img.title_pc{
       width: 65%;
     }
+    img.title_sp{
+      display: none
+    }
   }
+  @media (max-width: 736px){
+    h1{
+      padding: 23px 0 20px 0;
+      img.title_pc{
+        display: none;
+      }
+      img.title_sp{
+        display: block;
+        width: 82%;
+        margin: auto;
+      }
+    }
+  }
+  // スマホサイズ
 }
 main{
   .description{
@@ -33,6 +50,12 @@ main{
       letter-spacing: 1.3px;
       line-height: 1.5;
       text-shadow: 0 0 30px black;
+      span.name{
+        display: none;
+      }
+    }
+    span.menu_sp{
+      display: none;
     }
     .last_line{
       overflow: hidden;
@@ -69,6 +92,35 @@ main{
       }
     }
   }
+  @media (max-width: 736px){
+    .description{
+      width: 90%;
+      p{
+        text-align: justify;
+        font-size: 2.2vh;
+        letter-spacing: 0px;
+        span.name{
+          font-size: 2rem;
+          display: block;
+          font-family: 'Waiting for the Sunrise', cursive;
+          text-align: right;
+          margin-top: -2.6rem;
+        }
+      }
+      span.menu_sp{
+        display: block;
+        text-align: center;
+        margin-top: 2vh;
+        img{
+          width: 50%;
+        }
+      }
+      .last_line{
+        display: none;
+      }
+    }
+  }
+  // スマホサイズ
 }
 
 footer{
@@ -99,6 +151,12 @@ footer{
     transform: translateY(50px);
     transition: all .2s ease;
     margin: auto;
+    @media (max-width: 736px){
+      li{
+        margin-top: 1vh;
+      }
+    }
+    // スマホサイズ
     li{
       margin-top: 10px;
       a{
@@ -116,6 +174,21 @@ footer{
         img{
           width: 15rem;
         }
+        @media (max-width: 736px){
+          opacity: 1;
+          margin: 2vh 0;
+          font-size: 6.2vh;
+          img.top{
+            width: 16vh;
+          }
+          img.overseas{
+            width: 36vh;
+          }
+          img{
+            width: 24vh;
+          }
+        }
+        // スマホサイズ
       }
       a:hover{
         opacity: 1;
@@ -129,7 +202,15 @@ footer{
         color: black;
         font-size: 5rem;
       }
+      @media (max-width: 736px){
+        margin-right: 8vh;
+        a{
+          font-size: 7vh;
+        }
+      }
+      // スマホサイズ
     }
+
     li:last-child{
       margin-right: 0px;
     }
@@ -142,6 +223,14 @@ footer{
       width: 50px;
       display: block;
     }
+    @media (max-width: 736px){
+      top: 2.4vh;
+      right: 2.4vh;
+      img{
+        width: 30px;
+      }
+    }
+    // スマホサイズ
   }
 }
 body.is-menu-open #modal_menu {
